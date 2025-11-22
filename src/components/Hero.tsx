@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="flex-1 text-center md:text-left order-2 md:order-1">
               <p className="text-muted-foreground text-lg mb-2">Hi, I'm</p>
               <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-                Kasi Dulam
+                kasi viswanadh dulam
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
                 Full Stack Web Developer

@@ -67,6 +67,11 @@ const About = () => {
                   ))}
                 </div>
 
+                <div className="glass-card p-4 rounded-lg border border-primary/30 text-center">
+                  <p className="text-lg">
+                    <span className="font-semibold text-primary">Fun fact:</span> I debug faster after coffee ☕😂
+                  </p>
+                </div>
               </div>
             </div>
           </div>
