@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import DarkModeToggle from "./DarkModeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -68,12 +69,15 @@ const Navigation = () => {
             </button>
           </div>
 
-          <Button
-            onClick={() => scrollToSection("contact")}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan"
-          >
-            Hire Me
-          </Button>
+          <div className="flex items-center gap-4">
+            <DarkModeToggle />
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan"
+            >
+              Hire Me
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
