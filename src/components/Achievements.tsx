@@ -1,6 +1,10 @@
-import { Award, Cloud, Sparkles, Code, Trophy } from "lucide-react";
+import { Award, Cloud, Sparkles, Code, Trophy, Image } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 
 const Achievements = () => {
+  const [openModal, setOpenModal] = useState<number | null>(null);
+
   const achievements = [
     {
       icon: Code,
@@ -8,6 +12,7 @@ const Achievements = () => {
       description:
         "Successfully cleared HackerRank Python exam, building strong foundations in Python fundamentals, data structures, and problem-solving.",
       color: "primary",
+      hasCertificate: true,
     },
     {
       icon: Cloud,
@@ -15,6 +20,7 @@ const Achievements = () => {
       description:
         "Gained practical knowledge of cloud technologies and their applications in AI solutions.",
       color: "secondary",
+      hasCertificate: true,
     },
     {
       icon: Sparkles,
@@ -22,6 +28,7 @@ const Achievements = () => {
       description:
         "Learned prompt engineering, AI content creation, and productivity automation using 100+ AI tools.",
       color: "accent",
+      hasCertificate: true,
     },
     {
       icon: Award,
@@ -60,7 +67,26 @@ const Achievements = () => {
                 key={index}
                 className={`border-gradient rounded-2xl p-1 hover:glow-${achievement.color} transition-all duration-500 hover:scale-105`}
               >
-                <div className="glass-card rounded-2xl p-6 h-full flex flex-col">
+                <div className="glass-card rounded-2xl p-6 h-full flex flex-col relative">
+                  {achievement.hasCertificate && (
+                    <Dialog open={openModal === index} onOpenChange={(open) => setOpenModal(open ? index : null)}>
+                      <DialogTrigger asChild>
+                        <button className="absolute top-4 right-4 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 hover:bg-primary/30 hover:glow-cyan transition-all duration-300">
+                          <Image className="w-4 h-4 text-primary" />
+                        </button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl w-full">
+                        <div className="flex items-center justify-center p-4">
+                          <div className="w-full h-full rounded-lg bg-muted flex items-center justify-center text-muted-foreground">
+                            <div className="text-center">
+                              <Image className="w-16 h-16 mx-auto mb-4" />
+                              <p>Certificate Image for {achievement.title}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
+                  )}
                   <div className={`w-12 h-12 rounded-lg bg-${achievement.color}/20 flex items-center justify-center mb-4`}>
                     <Icon className={`w-6 h-6 text-${achievement.color}`} />
                   </div>

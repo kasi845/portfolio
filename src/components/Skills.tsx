@@ -57,11 +57,11 @@ const Skills = () => {
                     <div key={idx}>
                       <div className="flex justify-between mb-2">
                         <span className="text-muted-foreground">{skill.name}</span>
-                        <span className="text-primary font-semibold">{skill.level}%</span>
+                        <span className="text-blue-500 font-semibold">{skill.level}%</span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2.5">
                         <div
-                          className={`bg-gradient-to-r from-${category.color} to-${category.color}/70 h-2.5 rounded-full transition-all duration-1000`}
+                          className="bg-blue-500 h-2.5 rounded-full transition-all duration-1000"
                           style={{ width: `${skill.level}%` }}
                         ></div>
                       </div>

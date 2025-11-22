@@ -27,7 +27,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-primary">Kasi.</h2>
+          <h2 className="text-2xl font-bold text-blue-500">Kasi.D</h2>
           
           <div className="hidden md:flex items-center gap-8">
             <button

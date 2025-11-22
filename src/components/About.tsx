@@ -67,14 +67,6 @@ const About = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4">
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan">
-                    View Resume
-                  </Button>
-                  <Button variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
-                    View CV
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
