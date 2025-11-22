@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Code2 } from "lucide-react";
+import { Github, Linkedin, Code2, Instagram } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -55,6 +55,14 @@ const Hero = () => {
                     className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
                   >
                     <Code2 className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://instagram.com/kasidulam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
+                  >
+                    <Instagram className="w-6 h-6" style={{ color: '#E1306C' }} />
                   </a>
                 </div>
               </div>
