@@ -23,7 +23,7 @@ const ThankYou = () => {
               {/* Mini Social Footer */}
               <div className="flex items-center justify-center gap-4 pt-6 border-t border-border/30">
                 <a
-                  href="https://linkedin.com/in/kasidulam"
+                  href="http://www.linkedin.com/in/kasi-viswanadh-dulam-b2a83536a"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300 hover:scale-110"
@@ -31,7 +31,7 @@ const ThankYou = () => {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://github.com/kasidulam"
+                  href="https://github.com/kasi845"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300 hover:scale-110"
@@ -39,7 +39,7 @@ const ThankYou = () => {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://instagram.com/kasidulam"
+                  href="https://www.instagram.com/its_vishwa.28?igsh=bm4zcmRuOWp2NGM0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300 hover:scale-110"

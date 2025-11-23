@@ -70,9 +70,10 @@ const Contact = () => {
                   <div className="relative w-32 h-32">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full glow-cyan"></div>
                     <div className="absolute inset-2 bg-card rounded-full flex items-center justify-center">
-                      <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl font-bold">
+                      {/* <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl font-bold">
                         KD
-                      </div>
+                      </div> */}
+                      <img style={{objectFit:'cover'}} className="w-full h-full rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-3xl font-bold"  src="kasi.jpg" />
                     </div>
                   </div>
                 </div>

@@ -11,20 +11,20 @@ const Projects = () => {
         "Implemented user authentication with JWT for secure login and registration.",
         "Used MongoDB Atlas for persistent cloud data storage.",
       ],
-      codeUrl: "https://github.com/kasidulam",
+      codeUrl: "https://github.com/kasi845/todo_list_endpoints",
       liveUrl: "#",
     },
-    {
-      name: "CodeChef Problem Solutions",
-      tag: "Competitive Programming",
-      description: [
-        "Solved 250+ problems across various difficulty levels.",
-        "Implemented efficient algorithms for time-critical challenges.",
-        "Documented solutions with clear explanations and complexity analysis.",
-      ],
-      codeUrl: "https://github.com/kasidulam",
-      liveUrl: "https://codechef.com/users/kasidulam",
-    },
+    // {
+    //   name: "CodeChef Problem Solutions",
+    //   tag: "Competitive Programming",
+    //   description: [
+    //     "Solved 250+ problems across various difficulty levels.",
+    //     "Implemented efficient algorithms for time-critical challenges.",
+    //     "Documented solutions with clear explanations and complexity analysis.",
+    //   ],
+    //   codeUrl: "https://github.com/kasidulam",
+    //   liveUrl: "https://codechef.com/users/kasidulam",
+    // },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Projects = () => {
           <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-accent mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div style={{alignItems:'center',justifyContent:'center'}} className="grid">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -71,16 +71,7 @@ const Projects = () => {
                       View Code
                     </a>
                   </Button>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="border-secondary text-secondary hover:bg-secondary/10"
-                  >
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </a>
-                  </Button>
+                  
                 </div>
               </div>
             </div>

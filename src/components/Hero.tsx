@@ -24,16 +24,16 @@ const Hero = () => {
                 <Button className="bg-primary text-primary-foreground hover:bg-primary/90 glow-cyan px-8">
                   Hire Me
                 </Button>
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                {/* <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
                   Download Resume
-                </Button>
+                </Button> */}
               </div>
 
               <div className="space-y-4">
                 <p className="text-muted-foreground">Check out my social media:</p>
                 <div className="flex gap-4 justify-center md:justify-start">
                   <a
-                    href="https://github.com/kasidulam"
+                    href="https://github.com/kasi845"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
@@ -41,7 +41,7 @@ const Hero = () => {
                     <Github className="w-6 h-6" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/kasidulam"
+                    href="http://www.linkedin.com/in/kasi-viswanadh-dulam-b2a83536a"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
@@ -49,7 +49,7 @@ const Hero = () => {
                     <Linkedin className="w-6 h-6" />
                   </a>
                   <a
-                    href="https://codechef.com/users/kasidulam"
+                    href="https://www.codechef.com/users/kasi_viswanadh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
@@ -57,7 +57,7 @@ const Hero = () => {
                     <Code2 className="w-6 h-6" />
                   </a>
                   <a
-                    href="https://instagram.com/kasidulam"
+                    href="https://www.instagram.com/its_vishwa.28?igsh=bm4zcmRuOWp2NGM0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 glass-card rounded-lg hover:glow-cyan transition-all duration-300"
@@ -73,9 +73,12 @@ const Hero = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent rounded-full glow-multi animate-float"></div>
                 <div className="absolute inset-2 bg-card rounded-full flex items-center justify-center">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl font-bold">
+                  {/* <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl font-bold">
                     KD
-                  </div>
+                  </div> */}
+                  <img style={{
+                    objectFit:'cover'
+                  }} className="w-full h-full rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-6xl font-bold" src="kasi1.jpg" />
                 </div>
               </div>
             </div>

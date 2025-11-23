@@ -31,9 +31,10 @@ const About = () => {
                 <div className="relative w-48 h-64 md:w-56 md:h-80">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-2xl glow-cyan"></div>
                   <div className="absolute inset-2 bg-card rounded-2xl flex items-center justify-center">
-                    <div className="w-full h-full rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-4xl font-bold">
+                    {/* <div className="w-full h-full rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-4xl font-bold">
                       KD
-                    </div>
+                    </div> */}
+                    <img style={{objectFit:'cover'}} className="w-full h-full rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center text-4xl font-bold" src="kasi.jpg" />
                   </div>
                 </div>
               </div>
